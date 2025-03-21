@@ -197,16 +197,6 @@ body {
   background-position: center;
   background-repeat: repeat;
 }
-
-
-
-
-
-
-
-/* Agregamos estilos para el contenido dentro de las secciones */
-
-
 /* Para asegurar que la primera sección tenga suficiente padding en la parte superior */
 .inicio-section {
   padding-top: 5rem;

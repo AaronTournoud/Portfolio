@@ -1,18 +1,22 @@
+import jempa from '../assets/imagen/jempa.png'
+
+
+
 export const projectsData = [
     {
       id: 1,
-      name: "NE Training",
-      description: "Plataforma de entrenamientos personalizados.",
-      technologies: ["Laravel", "Inertia", "React + TS", "MySQL"],
-      image: "https://via.placeholder.com/400x200", // URL de la imagen
-      github: "https://github.com/tu-usuario/ne-training",
-      vercel: "https://ne-training.vercel.app",
+      name: "Jempa Tv",
+      description: "Aplicacion Web de seguimiento de series y peliculas",
+      technologies: ["C#", ".NET", "Angular + TS", "SQL Server"],
+      image: jempa, // URL de la imagen
+      github: "https://github.com/DesarrolloSoftware2024-JEMPA/JempaTV/tree/prod",
+      
     },
     {
       id: 2,
-      name: "Cub Mentor AD PRO",
-      description: "Landing Page Autoadministrable para empresa internacional de marketing de afiliados.",
-      technologies: ["Laravel", "MySQL"],
+      name: "Proyecto Algoritmos y estructura de datos: CRUD REAL STATE",
+      description: "Aplicacion para el servicio interno de una Inmobiliaria",
+      technologies: ["Pascal"],
       image: "https://via.placeholder.com/400x200", // URL de la imagen
       github: "https://github.com/tu-usuario/cub-mentor",
       vercel: "https://cub-mentor.vercel.app",

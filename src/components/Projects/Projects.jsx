@@ -23,9 +23,11 @@ const Projects = () => {
               <a href={project.github} target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
-              <a href={project.vercel} target="_blank" rel="noopener noreferrer">
-                Ver Demo
-              </a>
+              {project.vercel ? (
+                <a href={project.vercel} target="_blank" rel="noopener noreferrer">
+                  Ver Demo
+                </a>
+                ) : null}
             </div>
           </div>
         ))}
