@@ -1,0 +1,85 @@
+.projects {
+    padding: 2rem;
+    text-align: center;
+    background-color: #121212; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+  }
+  
+  .projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #bb86fc; /* Color principal para títulos */
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .project-card {
+    background: #1e1e1e; /* Fondo oscuro para las tarjetas */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más oscura */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 1px solid #333; /* Borde sutil */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Sombra más intensa al hacer hover */
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0.9; /* Ligera transparencia para la imagen */
+  }
+  
+  .project-card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #bb86fc; /* Color principal para títulos */
+  }
+  
+  .project-card p {
+    padding: 0 1rem;
+    color: #b0b0b0; /* Texto secundario */
+    font-size: 0.9rem;
+  }
+  
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+  
+  .tech-tag {
+    background-color: #3700b3; /* Color oscuro para las etiquetas */
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+  }
+  
+  .project-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    border-top: 1px solid #333; /* Borde sutil */
+  }
+  
+  .project-links a {
+    text-decoration: none;
+    color: #bb86fc; /* Color principal para enlaces */
+    font-weight: bold;
+  }
+  
+  .project-links a:hover {
+    text-decoration: underline;
+    color: #9a67ea; /* Color más claro al hacer hover */
+  }

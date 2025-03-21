@@ -1,0 +1,68 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid rgba(80, 80, 95, 0.2);
+}
+
+.navbar-hidden {
+  transform: translateY(-100%);
+}
+
+.navbar-visible {
+  transform: translateY(0);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: end;
+  margin-right: 10rem;
+  padding: 1rem 2rem;
+}
+
+.navbar-container a {
+  margin: 0 1rem;
+  color: #e0e0e0; /* Color claro para texto en tema oscuro */
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5); /* Sombra oscura para mejor legibilidad */
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s;
+  font-weight: 600;
+  /* Fondo muy sutil para los enlaces */
+  background-color: rgba(40, 40, 60, 0.1);
+}
+
+.navbar-container a:hover {
+  background-color: rgba(50, 50, 80, 0.4);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para la sección activa */
+.navbar-container a.active {
+  background-color: rgba(60, 60, 90, 0.5);
+  color: #ffffff;
+  font-weight: bold;
+  /* Borde inferior con color que destaque en modo oscuro */
+  border-bottom: 2px solid rgba(120, 200, 255, 0.8);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Asegurar compatibilidad en dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    padding: 0.5rem;
+  }
+  
+  .navbar-container a {
+    margin: 0 0.5rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.9rem;
+  }
+}

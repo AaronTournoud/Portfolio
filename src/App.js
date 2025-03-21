@@ -1,29 +1,18 @@
 import React from 'react';
-import { Link, Element } from 'react-scroll';
+import { Element } from 'react-scroll';
 import Home from './components/Home/Home';
 import About from './components/About/About';
+import NavBar from './components/NavBar/NavBar';
 import Projects from './components/Projects/Projects';
-import Contact from './components/Contact/Contact';
+//import Contact from './components/Contact/Contact';
 import './App.css';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
       {/* Barra de navegación con react-scroll */}
-      <nav>
-        <ul>
-          <li>
-            <Link to="Home" smooth={true} duration={500}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="About" smooth={true} duration={500}>
-              About
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <NavBar />
 
       {/* Secciones de la página */}
       <Element name="Home" className="section">
@@ -31,6 +20,12 @@ function App() {
       </Element>
       <Element name="About" className="section">
         <About />
+      </Element>
+      <Element name="Projects" className="section">
+        <Projects />
+      </Element>
+      <Element name="Footer" className="section">
+        <Footer />
       </Element>
     </div>
   );

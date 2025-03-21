@@ -5,20 +5,7 @@ import './Home.css'; // Asegúrate de crear este archivo CSS
 const Home = () => {
   return (
     <div className="home-container">
-      {/* Barra de navegación */}
-      <nav className="navbar">
-        <div className="nav-content">
-          <div className="logo">
-            <Link to="/">MI.DEV</Link>
-          </div>
-          <ul className="nav-links">
-            <li><Link to="/">Inicio</Link></li>
-            <li><Link to="/sobre-mi">Sobre mí</Link></li>
-            <li><Link to="/proyectos">Proyectos</Link></li>
-            <li><Link to="/contacto">Contacto</Link></li>
-          </ul>
-        </div>
-      </nav>
+      
 
       {/* Sección principal */}
       <main className="hero-section">
@@ -30,7 +17,14 @@ const Home = () => {
           </p>
           
           <div className="cta-buttons">
-            <Link to="/proyectos" className="primary-button">Ver Proyectos</Link>
+          <Link
+        to="projects" // ID de la sección de proyectos
+        smooth={true} // Desplazamiento suave
+        duration={500} // Duración del desplazamiento
+        className="primary-button"
+      >
+        Ver Proyectos
+      </Link>
             <Link to="/contacto" className="secondary-button">Contáctame</Link>
           </div>
           
@@ -52,10 +46,8 @@ const Home = () => {
         </div>
       </main>
 
-      {/* Pie de página */}
-      <footer className="footer">
-        <p>© 2025 Mi Portafolio. Todos los derechos reservados.</p>
-      </footer>
+   
+      
     </div>
   );
 };
